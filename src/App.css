@@ -130,16 +130,13 @@ body
 {
   .todo-btn 
   {
-    width: 75px; /* Adjusted width for consistency */
-    margin-left: 10px; /* Added margin for spacing */
-    vertical-align: top; /* Aligns with top of the input field */
+    width: 45px; /* Adjusted width for consistency */
+    
   }
 
   .inputsection 
   {
-    width: calc(100% - 90px); /* Adjusted width for responsiveness */
-    margin-right: 10px; /* Added margin for spacing */
-    vertical-align: top; /* Aligns with top of the button */
+    width: 100px /* Adjusted width for responsiveness */
   }
 
   .trashicon 
