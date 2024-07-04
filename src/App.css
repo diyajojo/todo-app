@@ -132,12 +132,14 @@ body
   {
     width: 75px; /* Adjusted width for consistency */
     margin-left: 10px; /* Added margin for spacing */
+    vertical-align: top; /* Aligns with top of the input field */
   }
 
   .inputsection 
   {
-    width: calc(100% - 85px); /* Adjusted width for responsiveness */
+    width: calc(100% - 90px); /* Adjusted width for responsiveness */
     margin-right: 10px; /* Added margin for spacing */
+    vertical-align: top; /* Aligns with top of the button */
   }
 
   .trashicon 
@@ -145,7 +147,7 @@ body
     margin-right: 10px;
   }
 
-  .todo 
+  .todo
   {
     width: 95%;
   }
@@ -154,11 +156,5 @@ body
   {
     flex-direction: column; /* Adjusted flex-direction for mobile layout */
     align-items: center; /* Center align items on mobile */
-  }
-
-  .inputsection,.todo-btn 
-  {
-    width: calc(50% - 5px); /* Ensure both fit on the same line */
-    margin-right: 5px; /* Space between input and button */
   }
 }
