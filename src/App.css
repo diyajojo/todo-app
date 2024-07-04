@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
-* {
+* 
+{
   font-family: 'Beiruti', sans-serif;
-  font-weight: bold;
 }
 
-body
+body 
 {
   background-color: #87CEEB;
 }
 
-.header 
+.header
 {
   font-family: 'Amatic SC', sans-serif;
   font-size: xx-large;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .tasklist 
@@ -46,7 +46,7 @@ body
 .inputsection 
 {
   height: 20px;
-  width: 200px;
+  width: calc(100% - 90px); /* Adjusted width to accommodate button */
   outline: none;
   background: none;
   border: 1px solid rgb(150, 186, 204);
@@ -54,9 +54,10 @@ body
   margin-top: 1rem;
   margin-bottom: 2rem;
   color: #e3dbdb;
+  display: inline-block; /* Ensures inline block display */
 }
 
-.todo-input::placeholder 
+.inputsection::placeholder 
 {
   color: #0808084d;
 }
@@ -75,7 +76,7 @@ body
   cursor: pointer;
 }
 
-.todo-item
+.todo-item 
 {
   display: flex;
   flex-direction: row;
@@ -87,10 +88,10 @@ body
   width: auto;
   padding: 10px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
-.taskname
+.taskname 
 {
   margin: 0;
   flex-grow: 1;
@@ -99,8 +100,7 @@ body
   padding-left: 3px;
 }
 
-.todo 
-{
+.todo {
   justify-content: space-between;
   align-items: center;
   background: #1d0166;
@@ -110,40 +110,47 @@ body
   margin-bottom: 1rem;
 }
 
-#form 
-{
+#form {
   align-items: center;
   justify-content: center;
 }
 
-.taskcompleted
-{
+.taskcompleted {
   text-decoration: line-through;
   color: black;
 }
-.toggle-btn
-{
+
+.toggle-btn {
   background-color: black;
 }
 
-@media (max-width: 768px)
+@media (max-width: 768px) 
 {
-  .todo-btn 
-  {
-    width: 60px; 
+  .todo-btn
+   {
+    width: 75px; 
+    margin-left: 10px; 
   }
-  
+
   .inputsection 
   {
-    width: 80%; 
-  }
-  .trashicon 
-  {
+    width: calc(100% - 85px); 
     margin-right: 10px; 
   }
-  
-  .todo
+
+  .trashicon 
   {
-    width: 95%; 
+    margin-right: 10px;
+  }
+
+  .todo 
+  {
+    width: 95%;
+  }
+
+  .task-list
+  {
+    flex-direction: column; 
+    align-items: center; 
   }
 }
