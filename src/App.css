@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+* {
+  font-family: 'Beiruti', sans-serif;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body
+{
+  background-color: #87CEEB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header 
+{
+  font-family: 'Amatic SC', sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tasklist 
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.App 
+{
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.todo-btn 
+{
+  background: #87CEEB;
+  color: black;
+  border: none;
+  margin-bottom: 0;
+  cursor: pointer;
+  height: 39px;
+  width: 75px;
+}
+
+.inputsection 
+{
+  height: 20px;
+  width: 200px;
+  outline: none;
+  background: none;
+  border: 1px solid rgb(150, 186, 204);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #e3dbdb;
+}
+
+.todo-input::placeholder 
+{
+  color: #0808084d;
+}
+
+.icon-container 
+{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.trashicon 
+{
+  color: black;
+  padding-right: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.todo-item
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #87CEEB;
+  border-radius: 10px;
+  height: 45px;
+  width: auto;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px; 
+}
+
+.taskname
+{
+  margin: 0;
+  flex-grow: 1;
+  font-size: 25px;
+  color: black;
+  padding-left: 3px;
+}
+
+.todo 
+{
+  justify-content: space-between;
+  align-items: center;
+  background: #1d0166;
+  color: #f7eded;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#form 
+{
+  align-items: center;
+  justify-content: center;
+}
+
+.taskcompleted
+{
+  text-decoration: line-through;
+  color: black;
+}
+.toggle-btn
+{
+  background-color: black;
+}
+
+@media (max-width: 768px)
+{
+  .todo-btn 
+  {
+    width: 60px; 
   }
-  to {
-    transform: rotate(360deg);
+  
+  .inputsection 
+  {
+    width: 80%; 
+  }
+  .trashicon 
+  {
+    margin-right: 10px; 
+  }
+  
+  .todo
+  {
+    width: 95%; 
   }
 }
