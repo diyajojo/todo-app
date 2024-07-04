@@ -136,7 +136,7 @@ body
 
   .inputsection 
   {
-    width: 100px /* Adjusted width for responsiveness */
+    width: 150px /* Adjusted width for responsiveness */
   }
 
   .trashicon 
@@ -153,5 +153,10 @@ body
   {
     flex-direction: column; /* Adjusted flex-direction for mobile layout */
     align-items: center; /* Center align items on mobile */
+  }
+  #form
+  {
+    flex-direction: row;
+    align-items: center;
   }
 }
