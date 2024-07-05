@@ -131,6 +131,9 @@ body
   .todo-btn 
   {
     width: 45px; /* Adjusted width for consistency */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     
   }
 
@@ -159,4 +162,5 @@ body
     flex-direction: row;
     align-items: center;
   }
+
 }
